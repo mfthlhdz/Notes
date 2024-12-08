@@ -1,0 +1,27 @@
+GET http://localhost:5000/notes
+
+###
+GET http://localhost:5000/notes/1
+
+###
+POST http://localhost:5000/notes
+Content-Type: application/json
+
+{
+    "title": "John Doe",
+    "datetime": "2022-03-29 03:23:37",
+    "note": "This is a note"
+}
+
+###
+PATCH http://localhost:5000/notes/1
+Content-Type: application/json
+
+{
+    "title": "M Fikri",
+    "datetime": "2022-04-05 15:46:30",
+    "note": "This is a note"
+}
+
+###
+DELETE http://localhost:5000/notes/2
